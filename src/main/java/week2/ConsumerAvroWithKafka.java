@@ -20,7 +20,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-class ConsumerAvro_kafka {
+class ConsumerAvroWithKafka {
     public static void main(String[] args) throws IOException {
         Properties properties = new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"10.140.0.13:9092");

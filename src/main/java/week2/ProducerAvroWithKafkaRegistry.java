@@ -16,7 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ProducerAvro_kafka_registry {
+public class ProducerAvroWithKafkaRegistry {
     public static void main(String[] args) throws IOException {
         //config pro
         Properties properties = new Properties();

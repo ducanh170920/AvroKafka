@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Properties;
 
-public class ConsumerAvro_kafka_registry {
+public class ConsumerAvroWithKafkaRegistry {
     public static void main(String[] args) {
         Properties properties = new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"10.140.0.13:9092");
@@ -32,7 +32,7 @@ public class ConsumerAvro_kafka_registry {
             for(ConsumerRecord<String,GenericRecord> record : consumerRecords){
                 System.out.println(record.value());
             }
-            consumer.commitAsync();
+
 
         }
 

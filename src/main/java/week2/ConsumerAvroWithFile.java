@@ -22,7 +22,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class ConsumerAvro_file {
+public class ConsumerAvroWithFile {
     public static void main(String args[]) throws Exception{
 
         //Instantiating the Schema.Parser class.

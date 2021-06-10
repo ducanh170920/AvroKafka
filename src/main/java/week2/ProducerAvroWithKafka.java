@@ -23,7 +23,7 @@ import java.io.*;
 import java.util.Properties;
 import java.util.Scanner;
 
-public class ProducerAvro_kafka {
+public class ProducerAvroWithKafka {
     public static void main(String[] args) throws IOException {
         Properties properties = new Properties();
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"10.140.0.13:9092");
