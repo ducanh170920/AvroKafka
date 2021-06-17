@@ -1,9 +1,0 @@
-{
-    "type" : "record",
-    "namespace" : "ducanh.tutorial",
-    "name"      : "student",
-    "fields"    : [
-        {"name"     : "name" , "type"   : "string"},
-        {"name"     : "old" ,   "type"  : "int"}
-     ]
-}
