@@ -1,1 +1,1 @@
-runningTime:166 phut
+runningTime:92 phut
