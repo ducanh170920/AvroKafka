@@ -12,8 +12,6 @@ public class DummyGenFile {
     public static void main(String[] args) throws SQLException, IOException, IOException {
         DataFactory df = new DataFactory();
         long n = 5000000;
-        Connection conn = null;
-
         int count = 0;
         int pkg_order, pkg_status_id, customer_province_id, customer_district_id, customer_ward_id,is_cancel, ightk_user_id;
         String shop_code, customer_tel, customer_tel_normalize, fullname, CURRENT_TIMESTAMP;
