@@ -28,7 +28,7 @@ public class DataToSQL {
         BufferedReader reader = new BufferedReader(new FileReader("./data.csv"));
 
         long n = 5000000;
-        int BATCH_SIZE = 100;
+        int BATCH_SIZE = 10000;
         int index = 0;
         reader.readLine();
         reader.readLine();
@@ -41,7 +41,6 @@ public class DataToSQL {
             index++;
             if(index ==  BATCH_SIZE - 1 + count * BATCH_SIZE){
                 query+=';';
-                System.out.println(query);
                 System.out.println("Running Time:" + (System.currentTimeMillis()-timeStart));
                 stmt.executeUpdate(query);
                 count++;
