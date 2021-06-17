@@ -12,7 +12,6 @@ public class DummyGenFile {
     public static void main(String[] args) throws SQLException, IOException, IOException {
         DataFactory df = new DataFactory();
         long n = 5000000;
-        int BATCH_SIZE = 10000;
         Connection conn = null;
 
         int count = 0;
@@ -45,6 +44,6 @@ public class DummyGenFile {
 
         }
         writer.close();
-        System.out.println(sql);
+
     }
 }
