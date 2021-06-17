@@ -41,6 +41,17 @@
             <artifactId>avro-maven-plugin</artifactId>
             <version>${avro-maven-plugin.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.fluttercode.datafactory</groupId>
+            <artifactId>datafactory</artifactId>
+            <version>0.8</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.20</version>
+        </dependency>
     </dependencies>
 
     <repositories>
