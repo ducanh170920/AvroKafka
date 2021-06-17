@@ -19,7 +19,6 @@ public class DummyGenFile {
         String shop_code, customer_tel, customer_tel_normalize, fullname, CURRENT_TIMESTAMP;
         String sql = "INSERT INTO customers_packages(pkg_order, shop_code, customer_tel, customer_tel_normalize, fullname, pkg_created" + ","+
                 " pkg_modified, package_status_id, customer_province_id, customer_district_id, customer_ward_id, created, modified, is_cancel, ightk_user_id) VALUES";
-        String str = "Hello";
         BufferedWriter writer = new BufferedWriter(new FileWriter("data.csv"));
 
         for (int i = 0; i < n; i++) {
@@ -35,7 +34,7 @@ public class DummyGenFile {
             ightk_user_id = df.getNumberBetween(1,2);
 
 
-            sql += "("+"\"" + shop_code + "\"" + "," + "\"" + customer_tel + "\"" + "," + "\"" + customer_tel_normalize + "\"" + "," + "\"" + fullname + "\"" + ","
+            sql = "("+"\"" + shop_code + "\"" + "," + "\"" + customer_tel + "\"" + "," + "\"" + customer_tel_normalize + "\"" + "," + "\"" + fullname + "\"" + ","
                     + "CURRENT_TIMESTAMP" + "," + "CURRENT_TIMESTAMP" + ","
                     + pkg_status_id + "," + customer_province_id + "," + customer_district_id + "," + customer_ward_id + ","
                     + "CURRENT_TIMESTAMP" + "," + "CURRENT_TIMESTAMP" + ","
