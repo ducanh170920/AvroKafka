@@ -16,9 +16,9 @@ def nomalize(data):
 lines = open("C:\\Users\\hoang\\OneDrive\\Desktop\\data\\data_1.json","r",encoding="utf8")
 f    = open("C:\\Users\\hoang\\OneDrive\\Desktop\\data\\data_anhhd25_1.json","a",encoding="utf8")
 i = 0
-x = 0
+
 for line in lines:
-    x = x + 1
+  
     i = i + 1
     if i == 1:
        f.write(line)
